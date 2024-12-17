@@ -78,12 +78,13 @@
     </profiles>
 
     <build>
-        <finalName>summo-sbmy</finalName>
+        <finalName>semu-leisure-inn</finalName>
         <resources>
             <resource>
                 <!-- 指定配置文件所在的resource目录 -->
                 <directory>src/main/resources</directory>
                 <includes>
+                    <include>**/*.yml</include>
                     <include>application.properties</include>
                     <include>logback-spring.xml</include>
                     <include>**/*.html</include>

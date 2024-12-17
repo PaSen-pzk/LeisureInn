@@ -29,3 +29,4 @@ hs_err_pid*
 # 忽略特定的文件夹
 /target/
 
+/.idea/

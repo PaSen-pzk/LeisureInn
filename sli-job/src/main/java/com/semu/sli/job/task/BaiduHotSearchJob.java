@@ -1,4 +1,4 @@
-package com.semu.sli.job;
+package com.semu.sli.job.task;
 
 import com.semu.sli.common.utils.IdUtils;
 import com.semu.sli.dao.entity.SliHotSearchDO;

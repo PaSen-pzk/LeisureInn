@@ -1,4 +1,4 @@
-package com.semu.sli.job;
+package com.semu.sli.job.task;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

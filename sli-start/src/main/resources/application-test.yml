@@ -64,4 +64,24 @@ spring:
     # Redis服务器连接密码
     password: posin@1998
 
+### xxl-job配置
+xxl:
+  job:
+    admin:
+      addresses: http://127.0.0.1:9100/xxl-job-admin
+  ### xxl-job, access token
+  accessToken: default_token
+  executor:
+    ### xxl-job executor appname
+    appname: xxl-job-executor-test
+    ### xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
+    address:
+    ### xxl-job executor server-info
+    ip:
+    port: 9110
+    ### xxl-job executor log-path
+    logpath: /usr/semu_app/logs/xxl-job/jobhandler
+    ### xxl-job executor log-retention-days
+    logretentiondays: 30
+
 

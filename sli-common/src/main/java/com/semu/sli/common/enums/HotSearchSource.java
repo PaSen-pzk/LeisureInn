@@ -4,6 +4,7 @@ public enum HotSearchSource {
 
     DOUYIN("douyin","抖音热搜"),
     BAIDU("baidu", "百度热搜"),
+    ZHIHU("zhihu", "知乎热搜"),
     ;
 
     private String code;

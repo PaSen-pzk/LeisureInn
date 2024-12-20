@@ -1,0 +1,26 @@
+### 应用名
+#spring:
+#  # 配置Druid数据源类型
+#  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+#    # 数据库连接URL，包括数据库名、允许的公开密钥检索、字符编码、禁用SSL、时区设置等
+#    url: jdbc:mysql://${deploy.ip}:3306/leisure_inn?useSSL=true&useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+#    # 数据库用户名
+#    username: root
+#    # 数据库密码
+#    password: Posin@1998
+#  # Redis数据库索引
+#  redis:
+#    database: 0
+#    # Redis连接超时时间（毫秒）
+#    timeout: 10000
+#    # Redis服务器地址
+#    host: ${deploy.ip}
+#    # Redis服务器端口
+#    port: 6379
+#    # Redis服务器连接密码
+#    password: posin@1998
+#
+#
+#
+#

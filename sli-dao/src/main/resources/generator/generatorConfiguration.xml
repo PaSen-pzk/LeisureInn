@@ -24,7 +24,7 @@
                         userId="${jdbc.user}" password="${jdbc.password}"/>
 
         <!-- entity路径 -->
-        <javaModelGenerator targetPackage="com.semu.sli.dao.entity"
+        <javaModelGenerator targetPackage="com.sli.sli.dao.entity"
                             targetProject="src/main/java"/>
 
         <!-- xml路径 -->
@@ -34,7 +34,7 @@
         </sqlMapGenerator>
 
         <!-- mapper路径 -->
-        <javaClientGenerator targetPackage="com.semu.sli.dao.mapper"
+        <javaClientGenerator targetPackage="com.sli.sli.dao.mapper"
                              targetProject="src/main/java"
                              type="XMLMAPPER">
         </javaClientGenerator>

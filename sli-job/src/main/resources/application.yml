@@ -1,0 +1,94 @@
+### 端口号
+#server:
+#  port: 9110
+#  servlet:
+#    context-path: /sli-job
+### 应用名
+#spring:
+#  application:
+#    name: semu-leisure-inn-job
+#  profiles:
+#    active: test
+#  # 配置Druid数据源类型
+#  datasource:
+#    # 数据库驱动类名
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    # 初始化连接池时创建的连接数量
+#    druid:
+#      initial-size: 5
+#      # 连接池最大活跃连接数
+#      max-active: 30
+#      # 连接池最小空闲连接数
+#      min-idle: 5
+#      # 等待连接获取的最大等待时间
+#      max-wait: 60000
+#      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接
+#      time-between-eviction-runs-millis: 60000
+#      # 配置一个连接在池中最小生存的时间
+#      min-evictable-idle-time-millis: 300000
+#      # 验证数据库连接有效的SQL语句
+#      validation-query: SELECT 1 FROM DUAL
+#      # 是否在从连接池获取连接前进行检验(建议关闭，影响性能)
+#      test-while-idle: true
+#      # 获取连接时执行validationQuery检测连接是否有效(建议关闭，影响性能)
+#      test-on-borrow: false
+#      # 归还连接时执行validationQuery检测连接是否有效(建议关闭，影响性能)
+#      test-on-return: false
+#      # 是否开启PSCache（PreparedStatement缓存），默认false
+#      pool-prepared-statements: false
+#      # 指定每个连接上PSCache的大小，默认-1表示不限制
+#      max-pool-prepared-statement-per-connection-size: 0
+#      # 启用监控统计和日志过滤器
+#      filters: stat,wall
+#      # 配置StatFilter的参数，合并SQL记录
+#      connection-properties: 'druid.stat.mergeSql=true;druid.stat.slowSqlMillis: 500'
+#      # 是否合并Druid数据源的监控信息
+#      use-global-data-source-stat: true
+#      # 开启Wall过滤器，并指定数据库类型为MySQL
+#      filter:
+#        wall:
+#          enabled: true
+#          db-type: mysql
+#        # 配置StatFilter的数据库类型为MySQL
+#        stat:
+#          db-type: mysql
+#          # 开启StatFilter
+#          enabled: true
+#  # Redis数据库索引
+#  redis:
+#    # 使用Lettuce连接池时的最大等待时间（-1表示无限制）
+#    lettuce:
+#      pool:
+#        max-wait: -1
+#        # Lettuce连接池的最大空闲连接数
+#        max-idle: 5
+#        # Lettuce连接池的最小空闲连接数
+#        min-idle: 0
+#        # Lettuce连接池的最大活跃连接数
+#        max-active: 20
+#        # 使用Jedis连接池时的最小空闲连接数
+#    jedis:
+#      pool:
+#        min-idle: 8
+#        # Jedis连接池的最大空闲连接数
+#        max-idle: 500
+#        # Jedis连接池的最大活跃连接数
+#        max-active: 2000
+#        # Jedis连接池的最大等待时间（毫秒）
+#        max-wait: 10000
+## MyBatis配置：自动映射行为设置为全字段
+#mybatis:
+#  configuration:
+#    auto-mapping-behavior: full
+#    # MyBatis配置：下划线转驼峰命名规则
+#    map-underscore-to-camel-case: true
+## MyBatis-Plus的Mapper文件位置
+#mybatis-plus:
+#  mapper-locations: classpath*:/mybatis/mapper/*.xml
+#
+## 部署配置
+#deploy:
+#  ip: 8.140.197.151
+#
+#
+#

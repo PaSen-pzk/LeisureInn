@@ -82,4 +82,3 @@ public class SliHotSearchDO  extends AbstractBaseDO<SliHotSearchDO> {
     @Column(name = "hot_search_excerpt")
     private String hotSearchExcerpt;
 }
-

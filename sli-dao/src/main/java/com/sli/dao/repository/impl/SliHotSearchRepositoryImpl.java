@@ -7,7 +7,7 @@ import com.sli.dao.repository.SliHotSearchRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public class SliHotSearchRepositoryImpl extends ServiceImpl<SliHotSearchMapper, SliHotSearchDO> implements SliHotSearchRepository {
-
+public class SliHotSearchRepositoryImpl extends ServiceImpl<SliHotSearchMapper, SliHotSearchDO>
+    implements SliHotSearchRepository {
 
 }

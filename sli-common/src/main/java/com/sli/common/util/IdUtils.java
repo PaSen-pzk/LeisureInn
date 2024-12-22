@@ -1,4 +1,4 @@
-package com.sli.common.utils;
+package com.sli.common.util;
 
 import java.util.Random;
 import java.util.UUID;

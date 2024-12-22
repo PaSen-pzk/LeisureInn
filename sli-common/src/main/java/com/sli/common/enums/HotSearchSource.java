@@ -2,9 +2,10 @@ package com.sli.common.enums;
 
 public enum HotSearchSource {
 
-    DOUYIN("douyin","抖音热搜"),
-    BAIDU("baidu", "百度热搜"),
-    ZHIHU("zhihu", "知乎热搜"),
+    DOUYIN("douyin","抖音热榜"),
+    BAIDU("baidu", "百度热榜"),
+    ZHIHU("zhihu", "知乎热榜"),
+    BILIBILI("bilibili", "B站热榜")
     ;
 
     private String code;

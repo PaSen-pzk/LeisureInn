@@ -1,11 +1,11 @@
 package com.sli.dao;
 
+import java.util.Calendar;
+import java.util.Date;
+
 import com.baomidou.mybatisplus.core.handlers.MetaObjectHandler;
 import org.apache.ibatis.reflection.MetaObject;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.Calendar;
-import java.util.Date;
 
 @Configuration
 public class MetaObjectHandlerConfig implements MetaObjectHandler {

@@ -3,6 +3,19 @@ server:
   port: 9000
   servlet:
     context-path: /semu-li
+  forward-headers-strategy: native
+  ssl:
+    key:
+      store: classpath:sbmy.fun.jks
+      key-store-password: xxx
+      key-store-type: JKS
+  tomcat:
+    port-header: X-Forwarded-Port
+    protocol-header: X-Forwarded-Proto
+    protocol-header-https-value: https
+  error:
+    whitelabel:
+      enabled: false
 ## 应用名
 spring:
   application:
@@ -76,6 +89,15 @@ spring:
         max-active: 2000
         # Jedis连接池的最大等待时间（毫秒）
         max-wait: 10000
+  velocity:
+    resource-loader-path: classpath:/velocity/templates
+    toolbox-config-location: /velocity/toolbox.xml
+    layout-url: /velocity/layout/default.vm
+
+  thymeleaf:
+    prefix: classpath:/static/
+    suffix: .html
+    mode: HTML
 # MyBatis配置：自动映射行为设置为全字段
 mybatis:
   configuration:
@@ -89,5 +111,16 @@ mybatis-plus:
 # 部署配置
 deploy:
   ip: 8.140.197.151
+
+china:
+  holiday:
+    key: xxx
+poetry:
+  api:
+    token: xxx
+token:
+  expire:
+    timeout: 86400
+anonUrl: /api/hotSearch/**,/api/welcome/**,/favicon.ico,/login/**,/,/mp/**,/web/**,/fonts/**,/baidu_verify_codeva-pPcZ2TtKzq.html,/google44c1dc81940929e7.html
 
 

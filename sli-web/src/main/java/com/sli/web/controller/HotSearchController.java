@@ -1,4 +1,4 @@
-package com.semu.web.controller;
+package com.sli.web.controller;
 
 import com.sli.common.model.dto.HotSearchDTO;
 import com.sli.common.model.dto.HotSearchDetailDTO;

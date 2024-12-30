@@ -1,3 +1,6 @@
+server:
+  custom:
+    port: 9001
 ## 应用名
 spring:
   # 配置Druid数据源类型

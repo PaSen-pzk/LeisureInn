@@ -1,4 +1,4 @@
-package com.semu.web.config;
+package com.sli.web.config;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;

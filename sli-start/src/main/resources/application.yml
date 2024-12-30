@@ -4,15 +4,15 @@ server:
   servlet:
     context-path: /semu-li
   forward-headers-strategy: native
-  ssl:
-    key:
-      store: classpath:sbmy.fun.jks
-      key-store-password: xxx
-      key-store-type: JKS
-  tomcat:
-    port-header: X-Forwarded-Port
-    protocol-header: X-Forwarded-Proto
-    protocol-header-https-value: https
+#  ssl:
+#    key:
+#      store: classpath:sbmy.fun.jks
+#      key-store-password: xxx
+#      key-store-type: JKS
+#  tomcat:
+#    port-header: X-Forwarded-Port
+#    protocol-header: X-Forwarded-Proto
+#    protocol-header-https-value: https
   error:
     whitelabel:
       enabled: false
@@ -93,7 +93,6 @@ spring:
     resource-loader-path: classpath:/velocity/templates
     toolbox-config-location: /velocity/toolbox.xml
     layout-url: /velocity/layout/default.vm
-
   thymeleaf:
     prefix: classpath:/static/
     suffix: .html

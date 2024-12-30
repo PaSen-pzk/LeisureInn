@@ -1,4 +1,4 @@
-package com.semu.web.controller;
+package com.sli.web.controller;
 
 import com.sli.aspect.visit.VisitLog;
 import com.sli.common.limit.slidingwindow.SlidingWindowRateLimit;

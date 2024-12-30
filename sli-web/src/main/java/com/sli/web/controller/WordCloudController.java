@@ -1,4 +1,4 @@
-package com.semu.web.controller;
+package com.sli.web.controller;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;

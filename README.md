@@ -16,7 +16,22 @@
 查看服务状态，在当前目录下执行：./start.sh status  
 
 ### 2. xxl-job-admin (9100)
+#### 部署位置：/usr/semu_app/xxl-job2.4.2/  
 
+#### 日志: /usr/semu_app/logs/  
+
+#### 快捷脚本
+```
+给start.sh文件授权：chmod 744 start.sh  
+
+启动服务，在当前目录下执行：./xxl-job-start.sh start  
+
+关闭服务，在当前目录下执行：./xxl-job-start.sh stop  
+
+重启服务，在当前目录下执行：./xxl-job-start.sh restart  
+
+查看服务状态，在当前目录下执行：./xxl-job-start.sh status  
+```
 #### 2.1  xxl-job-executor (9110)
 
 ### 3. sli应用 (9000)  

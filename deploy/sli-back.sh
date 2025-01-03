@@ -1,6 +1,7 @@
 #!/bin/bash
 #这里可替换为你自己的执行程序，其他代码无需更改
 APP_NAME=semu-leisure-inn.01.1001.2025.jar
+APP_PATH=/usr/semu_app/xxl-job2.4.2/semu_leisure_inn
 
 #使用说明，用来提示输入参数
 usage() {

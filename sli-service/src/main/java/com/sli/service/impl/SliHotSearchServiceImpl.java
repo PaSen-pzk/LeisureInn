@@ -25,12 +25,12 @@ public class SliHotSearchServiceImpl implements SliHotSearchService {
     private SliHotSearchRepository sliHotSearchRepository;
 
     @Override
-    public Boolean saveCache2DB(List<SliHotSearchDO> sbmyHotSearchDOS) {
-        if (CollectionUtils.isEmpty(sbmyHotSearchDOS)) {
+    public Boolean saveCache2DB(List<SliHotSearchDO> sliHotSearchDOS) {
+        if (CollectionUtils.isEmpty(sliHotSearchDOS)) {
             return Boolean.TRUE;
         }
         //查询当前数据是否已经存在
-        List<String> searchIdList = sbmyHotSearchDOS.stream().map(SliHotSearchDO::getHotSearchId).collect(
+        List<String> searchIdList = sliHotSearchDOS.stream().map(SliHotSearchDO::getHotSearchId).collect(
             Collectors.toList());
         List<SliHotSearchDO> sliHotSearchDOList = sliHotSearchRepository.list(
             new QueryWrapper<SliHotSearchDO>().lambda().in(SliHotSearchDO::getHotSearchId, searchIdList));
@@ -38,15 +38,15 @@ public class SliHotSearchServiceImpl implements SliHotSearchService {
         if (CollectionUtils.isNotEmpty(sliHotSearchDOList)) {
             List<String> tempIdList = sliHotSearchDOList.stream().map(SliHotSearchDO::getHotSearchId).collect(
                 Collectors.toList());
-            sbmyHotSearchDOS = sbmyHotSearchDOS.stream().filter(
-                sbmyHotSearchDO -> !tempIdList.contains(sbmyHotSearchDO.getHotSearchId())).collect(Collectors.toList());
+            sliHotSearchDOS = sliHotSearchDOS.stream().filter(
+                sliHotSearchDO -> !tempIdList.contains(sliHotSearchDO.getHotSearchId())).collect(Collectors.toList());
         }
-        if (CollectionUtils.isEmpty(sbmyHotSearchDOS)) {
+        if (CollectionUtils.isEmpty(sliHotSearchDOS)) {
             return Boolean.TRUE;
         }
-        log.info("本次新增[{}]条数据", sbmyHotSearchDOS.size());
+        log.info("本次新增[{}]条数据", sliHotSearchDOS.size());
         //批量添加
-        return sliHotSearchRepository.saveBatch(sbmyHotSearchDOS);
+        return sliHotSearchRepository.saveBatch(sliHotSearchDOS);
     }
 
     @Override
@@ -54,14 +54,14 @@ public class SliHotSearchServiceImpl implements SliHotSearchService {
         //设置分页参数
         PageHelper.startPage(pageNum, pageSize);
         //查询热搜
-        List<SliHotSearchDO> sbmyHotSearchDOS = sliHotSearchRepository.list(
+        List<SliHotSearchDO> sliHotSearchDOS = sliHotSearchRepository.list(
             new QueryWrapper<SliHotSearchDO>().lambda().like(SliHotSearchDO::getHotSearchTitle, "%" + title + "%")
                 .orderByDesc(AbstractBaseDO::getGmtCreate));
-        if (CollectionUtils.isEmpty(sbmyHotSearchDOS)) {
+        if (CollectionUtils.isEmpty(sliHotSearchDOS)) {
             return Page.emptyPage();
         }
         //对象转换
-        return Page.resetPage(sbmyHotSearchDOS, sbmyHotSearchDOS.stream().map(HotSearchConvert::toDTOWhenQuery)
+        return Page.resetPage(sliHotSearchDOS, sliHotSearchDOS.stream().map(HotSearchConvert::toDTOWhenQuery)
             .collect(Collectors.toList()));
     }
 }

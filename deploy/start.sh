@@ -4,7 +4,7 @@ APP_NAME=semu-leisure-inn.01.1001.2025.jar
 
 #使用说明，用来提示输入参数
 usage() {
-    echo "Usage: sh semu_leisure_inn.sh [start|stop|restart|status]"
+    echo "Usage: sh sli-back.sh [start|stop|restart|status]"
     exit 1
 }
 

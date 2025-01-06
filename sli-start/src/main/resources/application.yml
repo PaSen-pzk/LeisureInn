@@ -110,16 +110,18 @@ mybatis-plus:
 # 部署配置
 deploy:
   ip: 8.140.197.151
-
+# 节假日API配置
 china:
   holiday:
-    key: xxx
+    key: '6081b5f0074d8041441b42516bdf45608088'
+#今日诗词API配置
 poetry:
   api:
-    token: xxx
+    token: 'oV3wLcPyR9h4jdJy7cLtVTc8JrruIdU1'
 token:
   expire:
     timeout: 86400
+
 anonUrl: /api/hotSearch/**,/api/welcome/**,/favicon.ico,/login/**,/,/mp/**,/web/**,/fonts/**,/baidu_verify_codeva-pPcZ2TtKzq.html,/google44c1dc81940929e7.html
 
 

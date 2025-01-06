@@ -11,9 +11,9 @@ import java.util.Date;
 @Mapper
 public interface SliVisitLogMapper extends BaseMapper<SliVisitLogDO> {
 
-    @Select("SELECT COUNT(DISTINCT ip) FROM t_sbmy_visit_log WHERE gmt_create BETWEEN #{startTime} AND #{endTime}")
+    @Select("SELECT COUNT(DISTINCT ip) FROM t_sli_visit_log WHERE gmt_create BETWEEN #{startTime} AND #{endTime}")
     int queryUvByStartTimeAndEndTime(@Param("startTime") Date startTime, @Param("endTime") Date endTime);
 
-    @Select("SELECT COUNT(DISTINCT ip) FROM t_sbmy_visit_log")
+    @Select("SELECT COUNT(DISTINCT ip) FROM t_sli_visit_log")
     int queryUv();
 }

@@ -42,6 +42,14 @@
 
 ### 5. rabbit (5672)
 
+### 6. 今日诗词
+https://www.jinrishici.com/  
+https://www.jinrishici.com/doc/
+
+### 7. 节假日API
+http://www.apihubs.cn/#/holiday
+http://doc.apihubs.cn/
+
 
 
 

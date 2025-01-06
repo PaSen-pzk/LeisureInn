@@ -1,7 +1,7 @@
 #!/bin/bash
 #这里可替换为你自己的执行程序，其他代码无需更改
-APP_NAME=semu-leisure-inn.01.1001.2025.jar
-APP_PATH=/usr/semu_app/xxl-job2.4.2/semu_leisure_inn
+APP_NAME=semu-leisure-inn.jar
+APP_PATH=/usr/semu_app/semu_leisure_inn
 
 #使用说明，用来提示输入参数
 usage() {
@@ -26,7 +26,7 @@ start(){
   if [ $? -eq "0" ]; then
     echo "${APP_NAME} is already running. pid=${pid} ."
   else
-    nohup java -jar /home/admin/$APP_NAME > /dev/null 2>&1 &
+    nohup java -Dspring.profiles.active -Dfile.encoding=utf-8 -jar $APP_PATH/$APP_NAME > /dev/null 2>&1 &
     echo "${APP_NAME} start success"
   fi
 }

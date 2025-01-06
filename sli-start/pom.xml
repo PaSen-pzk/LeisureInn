@@ -55,24 +55,18 @@
     <!-- 添加四个环境的变量，变量名为environment -->
     <profiles>
         <profile>
-            <id>test</id>
+            <id>dev</id>
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <environment>test</environment>
+                <environment>dev</environment>
             </properties>
         </profile>
         <profile>
-            <id>consumer</id>
+            <id>publish</id>
             <properties>
-                <environment>consumer</environment>
-            </properties>
-        </profile>
-        <profile>
-            <id>producer</id>
-            <properties>
-                <environment>producer</environment>
+                <environment>publish</environment>
             </properties>
         </profile>
     </profiles>

@@ -26,7 +26,7 @@ start(){
   if [ $? -eq "0" ]; then
     echo "${APP_NAME} is already running. pid=${pid} ."
   else
-    nohup java -Dspring.profiles.active -Dfile.encoding=utf-8 -jar $APP_PATH/$APP_NAME > /dev/null 2>&1 &
+    nohup java -Dspring.profiles.active=publish -Dfile.encoding=utf-8 -jar ${APP_PATH}/$APP_NAME > /dev/null 2>&1 &
     echo "${APP_NAME} start success"
   fi
 }

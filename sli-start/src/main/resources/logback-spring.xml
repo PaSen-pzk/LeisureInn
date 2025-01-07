@@ -4,7 +4,7 @@
     <!-- 定义应用名称，区分应用 -->
     <property name="APP_NAME" value="semu-leisure-inn"/>
     <!-- 定义日志文件的输出路径 -->
-    <property name="LOG_PATH" value="${user.home}/logs/${APP_NAME}"/>
+    <property name="LOG_PATH" value="/usr/semu_app/logs/${APP_NAME}"/>
     <!-- 定义日志文件名称和路径 -->
     <property name="INFO_LOG_FILE" value="${LOG_PATH}/info.log"/>
     <!-- 定义警告级别日志文件名称和路径 -->

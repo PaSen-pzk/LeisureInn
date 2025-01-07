@@ -31,10 +31,10 @@ xxl:
     admin:
       addresses: http://127.0.0.1:9100/xxl-job-admin
     ### xxl-job, access token
-    accessToken: default_token
+    accessToken: 'WhZBm60D9TX2knXAC8yH3hzXjjDEKyjw'
     executor:
       ### xxl-job executor appname
-      appname: semu-leisure-inn-executor
+      appname: semu-leisure-inn-executor-local
       ### xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
       address:
       ### xxl-job executor server-info

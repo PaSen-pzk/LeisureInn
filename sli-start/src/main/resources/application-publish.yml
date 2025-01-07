@@ -29,9 +29,9 @@ xxl:
   job:
     open: true
     admin:
-      addresses: https://blog.posin.online/xxl-job-admin
+      addresses: http://172.18.244.114:9100/xxl-job-admin
     ### xxl-job, access token
-    accessToken: default_token
+    accessToken: 'WhZBm60D9TX2knXAC8yH3hzXjjDEKyjw'
     executor:
       ### xxl-job executor appname
       appname: semu-leisure-inn-executor

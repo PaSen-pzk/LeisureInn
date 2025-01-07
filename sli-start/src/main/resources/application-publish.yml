@@ -29,7 +29,7 @@ xxl:
   job:
     open: true
     admin:
-      addresses: http://127.0.0.1:9100/xxl-job-admin
+      addresses: https://blog.posin.online/xxl-job-admin
     ### xxl-job, access token
     accessToken: default_token
     executor:
@@ -38,7 +38,7 @@ xxl:
       ### xxl-job executor registry-address: default use address to registry , otherwise use ip:port if address is null
       address:
       ### xxl-job executor server-info
-      ip: localhost
+      ip: 172.18.244.114
       port: 9110
       ### xxl-job executor log-path
       logpath: /usr/semu_app/logs/xxl-job/jobhandler

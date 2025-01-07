@@ -26,7 +26,7 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 import static com.sli.cache.hotSearch.HotSearchCacheManager.CACHE_MAP;
-import static com.sli.common.enums.HotSearchSource.DOUYIN;
+import static com.sli.common.enums.HotSearchEnum.DOUYIN;
 
 /**
  * @author summo

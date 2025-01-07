@@ -20,7 +20,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 import static com.sli.cache.hotSearch.HotSearchCacheManager.CACHE_MAP;
-import static com.sli.common.enums.HotSearchSource.BAIDU;
+import static com.sli.common.enums.HotSearchEnum.BAIDU;
 
 /**
  * @author summo

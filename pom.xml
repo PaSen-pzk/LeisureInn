@@ -22,6 +22,7 @@
         <module>sli-service</module>
         <module>sli-start</module>
         <module>sli-web</module>
+        <module>sli-io</module>
     </modules>
 
     <properties>
@@ -29,6 +30,7 @@
         <maven.compiler.target>8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <xxl.job.version>2.4.2</xxl.job.version>
+        <minio.version>8.5.14</minio.version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -220,6 +222,11 @@
                 <groupId>commons-codec</groupId>
                 <artifactId>commons-codec</artifactId>
                 <version>1.15</version>
+            </dependency>
+            <dependency>
+                <groupId>io.minio</groupId>
+                <artifactId>minio</artifactId>
+                <version>${minio.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

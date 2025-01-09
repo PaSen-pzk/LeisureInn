@@ -44,3 +44,9 @@ xxl:
       logpath: /usr/semu_app/logs/xxl-job/jobhandler
       ### xxl-job executor log-retention-days
       logretentiondays: 30
+# minio文件存储
+minio:
+  access-key: R2luprsT4hxWozfwkxNw
+  secret-key: QEjNWLmCwqDBEq5o78OaA5BmghpazhrZLW9Ww82y
+  url: http://8.140.197.151:19000
+  bucket-name: semu-leisure-inn-dev-files

@@ -22,6 +22,10 @@
             <groupId>com.posin</groupId>
             <artifactId>sli-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.posin</groupId>
+            <artifactId>sli-io</artifactId>
+        </dependency>
         <!-- thymeleaf -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

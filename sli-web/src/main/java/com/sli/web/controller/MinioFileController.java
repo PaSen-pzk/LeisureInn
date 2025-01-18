@@ -20,7 +20,8 @@ public class MinioFileController {
     public MinioFileController(@Autowired MinioUtil minioUtil) {
         this.minioUtil = minioUtil;
     }
-    @PostMapping(name = "/upload")
+
+    @PostMapping("upload")
     public ResultModel upload(@RequestParam("file") MultipartFile file) {
         String fileName = file.getOriginalFilename();
         minioUtil.upload(file, fileName);
